@@ -64,6 +64,7 @@ window.$docsify = {
 window.$docsify = {
   // 加载 _navbar.md
   loadNavbar: true,
+
   // 加载 nav.md
   loadNavbar: 'nav.md',
 };
@@ -80,6 +81,7 @@ window.$docsify = {
 window.$docsify = {
   // 加载 _sidebar.md
   loadSidebar: true,
+
   // 加载 summary.md
   loadSidebar: 'summary.md',
 };
@@ -135,6 +137,7 @@ window.$docsify = {
 window.$docsify = {
   // 入口文件改为 /home.md
   homepage: 'home.md',
+
   // 文档和仓库根目录下的 README.md 内容一致
   homepage:
     'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md',
@@ -150,8 +153,10 @@ window.$docsify = {
 ```js
 window.$docsify = {
   basePath: '/path/',
+
   // 直接渲染其他域名的文档
   basePath: 'https://docsify.js.org/',
+
   // 甚至直接渲染其他仓库
   basePath:
     'https://raw.githubusercontent.com/ryanmcdermott/clean-code-javascript/master/',
@@ -192,6 +197,7 @@ config/example.md     => http://domain.com/zh-cn/config/example
 window.$docsify = {
   // 启用相对路径
   relativePath: true,
+
   // 禁用相对路径（默认值）
   relativePath: false,
 };
@@ -207,10 +213,13 @@ window.$docsify = {
 ```js
 window.$docsify = {
   coverpage: true,
+
   // 自定义文件名
   coverpage: 'cover.md',
+
   // 多个封面页
   coverpage: ['/', '/zh-cn/'],
+
   // 多个封面页，并指定文件名
   coverpage: {
     '/': 'cover.md',
@@ -261,6 +270,7 @@ window.$docsify = {
 ```js
 window.$docsify = {
   nameLink: '/',
+
   // 按照路由切换
   nameLink: {
     '/zh-cn/': '/zh-cn/',
@@ -286,6 +296,7 @@ window.$docsify = {
       },
     },
   },
+
   // function
   markdown: function(marked, renderer) {
     // ...
@@ -394,8 +405,10 @@ window.$docsify = {
 ```js
 window.$docsify = {
   formatUpdated: '{MM}/{DD} {HH}:{mm}',
+
   formatUpdated: function(time) {
     // ...
+
     return time;
   },
 };
@@ -573,6 +586,7 @@ window.$docsify = {
 ```
 
 > 注意: 配置过`fallbackLanguages`这个选项的页面与这个选项`notFoundPage`冲突。
+
 ## topMargin
 
 - 类型: `Number`
@@ -678,7 +692,7 @@ window.$docsify = {
   <button @click="count -= 1">-</button>
   {{ count }}
   <button @click="count += 1">+</button>
-  </div>
+</div>
 ```
 
 <output id="counter">
